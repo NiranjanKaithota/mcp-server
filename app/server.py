@@ -1,6 +1,11 @@
 from fastmcp import FastMCP
 from dotenv import load_dotenv
+import os
+
 load_dotenv()
+# os.environ["JIRA_URL"] = os.getenv("JIRA_URL", "")
+# os.environ["JIRA_EMAIL"] = os.getenv("JIRA_EMAIL", "")
+# os.environ["JIRA_API_TOKEN"] = os.getenv("JIRA_API_TOKEN", "")
 
 mcp = FastMCP(name="Enterprise Integrator")
 
